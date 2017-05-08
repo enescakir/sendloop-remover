@@ -61,6 +61,7 @@ if not unsub_ip:
 # Get EMAIL_KEY from .env with default value 'Email'
 email_key = env.get('EMAIL_KEY', 'Email')
 
+print('== Unsubscribing ' + str(start) + " to " + str(start + count) + " => " + log)
 
 log_file = open(log, "w")
 with open(file) as csvfile:
